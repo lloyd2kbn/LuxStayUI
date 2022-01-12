@@ -1,0 +1,40 @@
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;   
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --header-height:80px;
+    --border-color:#DBDBDB;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#555;
+    --hover-color:#f65e39;
+}
+.btn{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+}
+@keyframes downToUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
