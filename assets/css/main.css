@@ -1,4 +1,7 @@
 /* HEADER */
+.app{
+    overflow: hidden;
+}
 header{
     position: fixed;
     left: 0;
@@ -645,4 +648,60 @@ list-style: none;
     font-size: 1.6rem;
     text-align: center;
     color: #9da2a8;
+}
+.menu-tablet-mobile{
+    display: none;
+}
+.header__mobile-bars-menu{
+    display: none;
+}
+/*  */
+.header__mobile-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 20%);   
+    z-index: 1;
+    display: none;
+}
+.input-checkbox-of-mobile:checked ~ .header__mobile-overlay{
+    display: block;
+}
+.input-checkbox-of-mobile:checked ~ .header__mobile-bars-menu{
+    transform: translateX(0);
+}
+/* translate box container */
+.translate-box-container-list{
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #ccc;   
+    width: 100%;
+    box-shadow: 1px 1px 2px #ccc;
+    display: none;
+    animation: downToUp linear 0.3s;
+
+}
+.translate-box-item{
+    list-style: none;
+    background-color: var(--white-color);
+    padding: 16px;
+    font-size: 1.7rem;
+}
+.translate-box-item-link{
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.translate-box-item-img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.translate-box-item-national{
+    margin-left: 10px;
+}
+#checkbox-translate:checked ~ .translate-box-container-list{
+    display: block;
 }
