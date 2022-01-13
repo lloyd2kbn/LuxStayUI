@@ -281,7 +281,10 @@
         margin-left: -12px;
         margin-right: -12px;
     }
-    
+    .row.custom{
+        margin-left: -16px;
+        margin-right: -16px;
+    }
     .row.sm-gutter {
         margin-left: -9px;
         margin-right: -9px;
@@ -296,7 +299,10 @@
         padding-left: 9px;
         padding-right: 9px;
     }
-
+   .row.custom .col{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .l-0 {
         display: none;
     }
@@ -588,14 +594,4 @@
     .wide .l-o-11 {
         margin-left: 91.66667%;
     }
-}
-/* goi y tu luxstay */
-.suggest-link-container{
-    display: block;
-    text-decoration: none;
-    color: var(--text-color);
-}
-.suggest-img{
-    width: 100%;
-    border-radius: 5px;
 }
